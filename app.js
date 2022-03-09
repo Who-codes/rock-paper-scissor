@@ -31,8 +31,8 @@ function computerPlay() {
 }
 
 function setImg(player, computer) {
-  playerCard.src = `/images/${player}.svg`;
-  computerCard.src = `/images/${computer}.svg`;
+  playerCard.src = `/images/${player.toLowerCase()}.svg`;
+  computerCard.src = `/images/${computer.toLowerCase()}.svg`;
 }
 
 function play(player, computer) {
