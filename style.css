@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+img{
+    width: 100%;
+} 
+
+a{
+    border: 5px solid green;
+    max-width: 200px;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    color: inherit;
+    transition: transform ease 0.2s, border-color ease 0.2s;
+}
+
+a:hover{
+    transform: scale(1.05);
+    border-color: black;
+}
+
+a:active{
+    border-color: black;
+    opacity: 0.75;
+}
+
+.container, .last-screen{
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.weapons{
+    padding: 0 1em;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    place-content: center;
+}
+
+.display{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.card{
+    border: 5px solid black;
+    padding: 1em 0.5em;
+}
+
+.last-screen{
+    border: 2px solid black;
+    padding: 1em;
+}
+
+.last-screen-text{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 1em;
+    font-size: inherit;
+    padding: 0.25em 0.75em;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color ease 0.2s;
+}
+
+.btn:hover, .btn:active{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.hide{
+    display: none;
+}

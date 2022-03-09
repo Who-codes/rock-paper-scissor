@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Choose Your Weapon</h2>
+      <div class="weapons">
+        <a href="#result"><img src="images/rock.svg" alt="" />Rock</a>
+        <a href="#result"><img src="images/paper.svg" alt="" />Paper</a>
+        <a href="#result"><img src="images/scissor.svg" alt="" />Scissor</a>
+      </div>
+      <div class="display">
+          <h3>Player Weapon</h3>
+          <h3>Enemy Weapon</h3>
+        <div class="player">
+          <div class="player-card card">
+            <img src="images/question-mark.svg" alt="" />
+          </div>
+        </div>
+        <div class="computer">
+          <div class="computer-card card">
+            <img src="images/question-mark.svg" alt="" />
+          </div>
+        </div>
+        <h3>Player : <span class="player-point">0</span></h3>
+        <h3>Computer : <span class="computer-point">0</span></h3>
+      </div>
+      <div id="result">
+        <h3 class="result"></h3>
+      </div>
+    </div>
+    <div class="last-screen hide">
+      <h2 class="last-screen-text">Decision</h2>
+      <button class="btn">Play Again</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
